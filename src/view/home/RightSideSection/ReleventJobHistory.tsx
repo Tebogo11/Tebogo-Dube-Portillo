@@ -37,7 +37,7 @@ const jobHistoryData: JobHistoryType[] = [
       "Implemented core product features including role-based access (employer / labourer), job posting and matching, availability tracking, real-time messaging, and maps & geolocation.",
       "Designed and integrated authentication, payments, and cloud backend services, managing deployment and ongoing development of a publicly available, live product.",
     ],
-    url: "https://www.mylabourer.com",
+    url: "https://www.mylabourer.co.uk",
   },
   {
     company: "Outfit AI",
