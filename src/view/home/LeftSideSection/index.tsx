@@ -1,4 +1,3 @@
-import React from "react";
 import LinkedInIcon from "../../../assets/linkIcons/linkedinIcon.svg?react";
 import GitHubIcon from "../../../assets/linkIcons/githubIcon.svg?react";
 import CodePenIcon from "../../../assets/linkIcons/codePenIcon.svg?react";
@@ -7,7 +6,7 @@ import ChessPlayer from "./ChessPlayer";
 import { useWindowSize } from "../../../hooks/useWindowSize";
 
 const LeftSideSection = () => {
-  const { width, height } = useWindowSize();
+  const { width } = useWindowSize();
   const linkIcons = [
     {
       href: "https://www.linkedin.com/in/tebogo-dube",

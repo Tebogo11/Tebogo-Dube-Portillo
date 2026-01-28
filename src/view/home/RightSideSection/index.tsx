@@ -1,4 +1,3 @@
-import React from "react";
 import AboutMe from "./AboutMe";
 import ReleventJobHistory from "./ReleventJobHistory";
 import Outro from "./Outro";

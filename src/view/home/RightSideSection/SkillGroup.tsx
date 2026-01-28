@@ -1,5 +1,3 @@
-import React from "react";
-
 type SkillGroup = {
   title: string;
   subtitle: string;
