@@ -42,6 +42,14 @@ const LeftSideSection = () => {
         <div>
           {width > 770 && (
             <div className="">
+              <p
+                className="
+              text-xs
+              w-2/4
+              "
+              >
+                Every move tells a story — these are mine.
+              </p>
               <ChessPlayer />
             </div>
           )}

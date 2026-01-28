@@ -116,10 +116,6 @@
     scrollbar-color: oklch(62% 0.152 181.912) transparent;
   }
 
-  /* WebKit browsers (Chrome, Edge, Safari) */
-  *::-webkit-scrollbar {
-  }
-
   *::-webkit-scrollbar-track {
     background: transparent;
   }

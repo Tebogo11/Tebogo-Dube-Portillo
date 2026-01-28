@@ -1,14 +1,12 @@
 import { useEffect, useRef } from "react";
 import HomePage from "./view/home";
-import { useSmoothScroll } from "./config/smoothScroll";
+import starBg from "./assets/starBg.png";
 
 function clamp(n: number, min: number, max: number) {
   return Math.max(min, Math.min(max, n));
 }
 
 export default function App() {
-  useSmoothScroll();
-
   const orbRef = useRef<HTMLDivElement | null>(null);
   const target = useRef({ x: 0, y: 0 });
   const pos = useRef({ x: 0, y: 0 });
@@ -65,6 +63,9 @@ export default function App() {
         }}
       />
 
+      <div className="absolute inset-0 opacity-20 ">
+        <img src={starBg} alt="Starry Background" className="h-full w-full " />
+      </div>
       <div className="sticky h-screen w-screen  z-10 bg-accent/10 overflow-y-hidden md:overflow-y-scroll md:max-h-[calc(100vh)]">
         <HomePage />
       </div>

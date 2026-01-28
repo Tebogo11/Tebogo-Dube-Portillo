@@ -55,17 +55,17 @@ const skillGroups: SkillGroup[] = [
 
 const SkillsSection = () => {
   return (
-    <section className="relative overflow-hidden py-2 sm:py-10 mb-10">
+    <section className="relative  py-2 sm:py-10 mb-10">
       {/* background */}
-      <div className="pointer-events-none absolute inset-0">
+      {/* <div className="pointer-events-none absolute inset-0">
         <div className="absolute -top-32 -left-32 h-72 w-72 rounded-full bg-cyan-500/15 blur-3xl animate-[pulse_6s_ease-in-out_infinite]" />
         <div className="absolute top-10 -right-32 h-80 w-80 rounded-full bg-fuchsia-500/15 blur-3xl animate-[pulse_7s_ease-in-out_infinite]" />
         <div className="absolute -bottom-40 left-1/3 h-96 w-96 rounded-full bg-emerald-500/10 blur-3xl animate-[pulse_8s_ease-in-out_infinite]" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(255,255,255,0.06),transparent_55%)]" />
         <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(255,255,255,0.04),transparent,rgba(255,255,255,0.03))]" />
-      </div>
+      </div> */}
 
-      <div className="relative mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div className="relative mx-auto w-full max-w-6xl ">
         {/* header */}
         <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>

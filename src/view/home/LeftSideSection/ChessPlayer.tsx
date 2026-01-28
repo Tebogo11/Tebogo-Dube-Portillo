@@ -38,7 +38,7 @@ const ChessPlayer = () => {
   const [moves, setMoves] = useState<string[]>([]);
   const [moveIndex, setMoveIndex] = useState(0);
 
-  // const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(true);
   // const [moveLog, setMoveLog] = useState<string[]>([]);
 
   const [players, setPlayers] = useState<{ white?: string; black?: string }>(
@@ -83,7 +83,7 @@ const ChessPlayer = () => {
 
   // Tick through moves
   useEffect(() => {
-    // if (!isPlaying) return;
+    if (!isPlaying) return;
     if (moves.length === 0) return;
 
     const id = window.setInterval(() => {
@@ -111,14 +111,14 @@ const ChessPlayer = () => {
 
       // const mover = move.color === "w" ? "White" : "Black";
       // setMoveLog((prev) => [...prev, `${mover}: ${move.san}`]);
-    }, 1300);
+    }, 1400);
 
     return () => window.clearInterval(id);
-  }, [GAMES_PGN.length, moveIndex, moves]);
+  }, [GAMES_PGN.length, isPlaying, moveIndex, moves]);
 
   return (
     <div>
-      <div className="font-extralight text-[0.8rem] mb-2 opacity-55 w-72 mt-10">
+      <div className="font-extralight text-[0.8rem] mb-2 opacity-55 w-72 mt-2">
         <Tilt>
           <Chessboard
             options={{
@@ -149,30 +149,30 @@ const ChessPlayer = () => {
           <p>Player: {myColor}</p>
         </div>
 
-        {/* <div className="mt-2 flex gap-2">
+        <div className="mt-2 flex gap-2">
           <button
-            className="px-3 py-1 bg-accent/20 hover:bg-accent/30 rounded-md text-[0.8rem]"
+            className="cursor-pointer hover:font-bold px-3 py-1 bg-accent/20 hover:bg-accent/30 rounded-md text-[0.8rem] text-white"
             onClick={() => setIsPlaying((p) => !p)}
           >
             {isPlaying ? "Pause" : "Play"}
           </button>
 
           <button
-            className="px-3 py-1 bg-accent/20 hover:bg-accent/30 rounded-md text-[0.8rem]"
+            className="cursor-pointer hover:font-bold px-3 py-1 bg-accent/20 hover:bg-accent/30 rounded-md text-[0.8rem] text-white"
             onClick={() => setGameIndex((i) => (i + 1) % GAMES_PGN.length)}
           >
             Next Game
           </button>
 
-          <button
+          {/* <button
             className="px-3 py-1 bg-accent/20 hover:bg-accent/30 rounded-md text-[0.8rem]"
             onClick={resetAll}
           >
             Reset All
-          </button>
+          </button> */}
         </div>
 
-        <div className="mt-2 text-[0.75rem] opacity-70">
+        {/* <div className="mt-2 text-[0.75rem] opacity-70">
           Game {gameIndex + 1}/{GAMES_PGN.length} • Move{" "}
           {Math.min(moveIndex, moves.length)}/{moves.length}
         </div> */}

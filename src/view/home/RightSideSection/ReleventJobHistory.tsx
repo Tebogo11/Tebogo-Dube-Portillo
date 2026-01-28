@@ -50,7 +50,7 @@ const jobHistoryData: JobHistoryType[] = [
       "Designed and developed the application end-to-end using React for the frontend, Convex for backend logic and real-time data, and Clerk for authentication, alongside AI-driven recommendation workflows.",
       "Integrated image analysis and LLM-based prompting to generate personalised outfit suggestions, with the product publicly accessible and under active development.",
     ],
-    url: "https://www.o-ai.app",
+    url: "https://o-ai.co.uk",
   },
 ];
 const ReleventJobHistory = () => {
