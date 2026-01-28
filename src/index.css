@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+:root {
+  --color-base-100: oklch(15% 0.09 281.288);
+  --color-base-200: oklch(20% 0.09 281.288);
+  --color-base-300: oklch(25% 0.09 281.288);
+  --color-base-content: oklch(96% 0.007 247.896);
+
+  --color-primary: oklch(58% 0.233 277.117);
+  --color-primary-content: oklch(96% 0.018 272.314);
+
+  --color-secondary: oklch(55% 0 0);
+  --color-secondary-content: oklch(98% 0 0);
+
+  --color-accent: oklch(77% 0.152 181.912);
+  --color-accent-content: oklch(38% 0.063 188.416);
+
+  --color-neutral: oklch(27% 0.041 260.031);
+  --color-neutral-content: oklch(98% 0.003 247.858);
+
+  --color-info: oklch(54% 0.245 262.881);
+  --color-info-content: oklch(97% 0.014 254.604);
+
+  --color-success: oklch(64% 0.2 131.684);
+  --color-success-content: oklch(98% 0.031 120.757);
+
+  --color-warning: oklch(68% 0.162 75.834);
+  --color-warning-content: oklch(98% 0.026 102.212);
+
+  --color-error: oklch(58% 0.253 17.585);
+  --color-error-content: oklch(96% 0.015 12.422);
+}
+
+@theme {
+  --color-base-100: oklch(15% 0.09 281.288);
+  --color-base-200: oklch(20% 0.09 281.288);
+  --color-base-300: oklch(25% 0.09 281.288);
+  --color-base-content: oklch(96% 0.007 247.896);
+
+  --color-primary: oklch(58% 0.233 277.117);
+  --color-primary-content: oklch(96% 0.018 272.314);
+
+  --color-secondary: oklch(55% 0 0);
+  --color-secondary-content: oklch(98% 0 0);
+
+  --color-accent: oklch(77% 0.152 181.912);
+  --color-accent-content: oklch(38% 0.063 188.416);
+
+  --color-neutral: oklch(27% 0.041 260.031);
+  --color-neutral-content: oklch(98% 0.003 247.858);
+
+  --color-info: oklch(54% 0.245 262.881);
+  --color-info-content: oklch(97% 0.014 254.604);
+
+  --color-success: oklch(64% 0.2 131.684);
+  --color-success-content: oklch(98% 0.031 120.757);
+
+  --color-warning: oklch(68% 0.162 75.834);
+  --color-warning-content: oklch(98% 0.026 102.212);
+
+  --color-error: oklch(58% 0.253 17.585);
+  --color-error-content: oklch(96% 0.015 12.422);
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    transition:
+      background-color 0.3s,
+      color 0.3s;
+  }
+  h1 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    opacity: 0.8;
+    color: var(--color-primary-content);
+  }
+  h2 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    opacity: 0.8;
+    color: var(--color-primary-content);
+  }
+
+  p,
+  span {
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    opacity: 0.8;
+    color: oklch(86% 0.018 272.314);
+  }
+  label {
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+  }
+
+  ::selection {
+    background-color: oklch(77% 0.152 181.912); /* Tailwind indigo-500 */
+    color: white;
+  }
+
+  /* ================================
+   Global Scrollbar Theme
+   ================================ */
+
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: oklch(62% 0.152 181.912) transparent;
+  }
+
+  /* WebKit browsers (Chrome, Edge, Safari) */
+  *::-webkit-scrollbar {
+  }
+
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 2px;
+    /* border: 2px solid var(--color-base-100); */
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+  }
+}
