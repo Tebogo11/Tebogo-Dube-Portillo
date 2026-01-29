@@ -49,7 +49,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="relative h-screen w-screen bg-linear-to-br from-base-200 to-[#0d0d0d] overflow-hidden  min-h-screen min-w-screen">
+    <div className="relative h-dvh w-screen bg-linear-to-br from-base-200 to-[#0d0d0d] overflow-hidden  min-h-dvh min-w-screen">
       <div
         ref={orbRef}
         className=" pointer-events-none absolute left-0 top-0 h-64 w-64 rounded-full blur-3xl "
@@ -63,10 +63,10 @@ export default function App() {
         }}
       />
 
-      <div className="absolute inset-0 opacity-20 ">
+      <div className="absolute inset-0 opacity-20 overflow-hidden ">
         <img src={starBg} alt="Starry Background" className="h-full w-full " />
       </div>
-      <div className="sticky h-screen w-screen  z-10 bg-accent/10 overflow-y-hidden md:overflow-y-scroll md:max-h-[calc(100vh)]">
+      <div className="sticky h-dvh w-screen  z-10 bg-accent/10 overflow-y-hidden md:overflow-y-scroll md:max-h-[calc(100vh)]">
         <HomePage />
       </div>
     </div>

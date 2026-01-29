@@ -32,7 +32,7 @@ const LeftSideSection = () => {
         <div>
           <h1 className="">Tebogo Dube</h1>
           <h2 className="text-4x2 ">Senior React / React Native Engineer</h2>
-          <p className="text-left text-[0.9rem] font-extralight mt-2 w-3/5">
+          <p className="text-left text-[0.9rem] font-extralight mt-2 md:w-3/5">
             I build accessible, well-structured web experiences with a focus on
             quality and detail.
           </p>
